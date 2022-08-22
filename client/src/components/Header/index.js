@@ -22,7 +22,7 @@ const Header = () => {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link as={Link} to="/profile">
-          Your eviews
+          Your Reviews
         </Nav.Link>
       </Nav.Item>
           <Nav.Item>

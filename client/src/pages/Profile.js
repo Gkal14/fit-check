@@ -25,7 +25,7 @@ const Profile = () => {
             <br></br>
             <br></br>
             <h4>Hi {profileData.username}!</h4>
-            <h5>View your reviewed shoes below</h5>
+            <h5>Your reviewed shoes can be seen below</h5>
 
              {/* Id: {profileData._id}
             <br/>
