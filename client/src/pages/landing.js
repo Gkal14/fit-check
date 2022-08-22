@@ -14,7 +14,7 @@ const Home = () => {
             <div>
             <br></br>
         <br></br>
-              <h4>Welcome to Fit Check,<br></br>A site for climbers to share their opinion on climbing shoes.</h4>
+              <h4 class="center">Welcome to Fit Check,<br></br>A site for climbers to share their opinion on climbing shoes.</h4>
             </div>
             
       </div>

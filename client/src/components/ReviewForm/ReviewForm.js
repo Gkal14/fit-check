@@ -55,10 +55,18 @@ const ReviewForm = () => {
       <form
         className="flex-row justify-center justify-space-between-md align-stretch"
         onSubmit={handleFormSubmit}>
+          <p class="bold">Description</p>
         <textarea
           placeholder="Review this shoe..."
           value={reviewText}
           className="form-input-review w-100"
+          onChange={handleChange}
+        >
+
+        </textarea>
+        <p class="bold">Rating</p>
+        <textarea
+          className="form-input-review w-40"
           onChange={handleChange}
         ></textarea>
         <button className="btn d-block w-100" type="submit">
