@@ -1,35 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 
-const reviewList = ({ reviews, title }) => {
-  if (!reviews.length) {
-    return <h3>No Reviews Yet!</h3>;
-  }
+// const reviewList = ({ reviews, title }) => {
+//   if (!reviews.length) {
+//     return <h3>No Reviews Yet!</h3>;
+//   }
 
-  return (
-    <div>
-      <h3>{title}</h3>
-      {reviews &&
-        reviews.map(review => (
-          <div key={review._id} className="card mb-3">
-            <p className="card-header">
-              <Link
-                to={`/profile/${review.username}`}
-                style={{ fontWeight: 700 }}
-                className="text-light"
-              >
-                {review.username}
-              </Link>{' '}
-            </p>
-            <div className="card-body">
-              <Link to={`/review/${review._id}`}>
-                <p>{review.reviewText}</p>
-              </Link>
-            </div>
-          </div>
-        ))}
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <h3>{title}</h3>
+//       {reviews &&
+//         reviews.map(review => (
+//           <div key={review._id} className="card mb-3">
+//             <p className="card-header">
+//               <Link
+//                 to={`/profile/${review.username}`}
+//                 style={{ fontWeight: 700 }}
+//                 className="text-light"
+//               >
+//                 {review.username}
+//               </Link>{' '}
+//             </p>
+//             <div className="card-body">
+//               <Link to={`/review/${review._id}`}>
+//                 <p>{review.reviewText}</p>
+//               </Link>
+//             </div>
+//           </div>
+//         ))}
+//     </div>
+//   );
+// };
 
-export default reviewList;
+// export default reviewList;

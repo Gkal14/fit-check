@@ -1,5 +1,6 @@
 import React from 'react';
 import ReviewForm from '../components/ReviewForm/ReviewForm';
+import '../components/Header/app.css'
 
 import Auth from '../utils/auth';
 import { useQuery } from '@apollo/client';
@@ -12,7 +13,7 @@ const Home = () => {
   const loggedIn = Auth.loggedIn();
 
   return (
-    <main>
+    <main class="body">
       
       <div>
         <br></br>

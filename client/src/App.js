@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Container from 'react-bootstrap/Container';
-
 import Landing from './pages/landing'
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import NotFound from './pages/Notfound';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import singleReview from './pages/singleReview';
 
 import Header from './components/Header';
+
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -40,7 +40,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Header/>
-        <Container>
+        
           <Routes>
             <Route 
               path="/" 
@@ -66,8 +66,12 @@ function App() {
               path="*"
               element={<NotFound />}
             />
+            <Route path="/review/:id" 
+            element={singleReview} />
+
           </Routes>
-        </Container>
+        
+       
       </Router>
     </ApolloProvider>
   );

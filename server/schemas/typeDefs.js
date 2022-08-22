@@ -26,7 +26,7 @@ type Query {
 type Mutation {
   login(email: String!, password: String!): Auth
   addUser(username: String!, email: String!, password: String!): Auth
-  addReview( recipeText: String!): Review
+  addReview( reviewText: String!): Review
 }
 `;
 

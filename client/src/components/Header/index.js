@@ -17,7 +17,7 @@ const Header = () => {
         <>
       <Nav.Item>
         <Nav.Link as={Link} to="/home">
-          Home
+          Add a Review
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>

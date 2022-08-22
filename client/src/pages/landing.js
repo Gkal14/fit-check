@@ -16,9 +16,6 @@ const Home = () => {
         <br></br>
               <h4>Welcome to Fit Check,<br></br>A site for climbers to share their opinion on climbing shoes.</h4>
             </div>
-            <div>
-              <p> Login or Signup and navigate to the homescreen to begin reviewing</p>
-            </div>
             
       </div>
       
