@@ -5,6 +5,7 @@ import { setContext } from '@apollo/client/link/context';
 
 import Container from 'react-bootstrap/Container';
 
+import Landing from './pages/landing'
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import NotFound from './pages/Notfound';
@@ -43,6 +44,10 @@ function App() {
           <Routes>
             <Route 
               path="/" 
+              element={<Landing />}
+            />
+            <Route 
+              path="/home" 
               element={<Home />}
             />
             <Route 

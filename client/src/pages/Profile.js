@@ -3,7 +3,7 @@ import React from 'react';
 import { QUERY_ME } from '../utils/queries';
 
 // import ReviewForm from '../components/ReviewForm/ReviewForm';
-import ReviewList from '../components/ReviewList/reviewList';
+// import ReviewList from '../components/ReviewList/reviewList';
 
 const Profile = () => {
     const {loading, data} = useQuery(QUERY_ME);
@@ -27,7 +27,7 @@ const Profile = () => {
             <br/>
             Username: {profileData.username}
             <div>
-                <ReviewList/>
+                {/* <ReviewList/> */}
             </div>
         </>
     );

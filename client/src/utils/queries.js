@@ -1,20 +1,20 @@
 import gql from 'graphql-tag';
 
 export const QUERY_REVIEWS = gql`
-  query recipes($username: String) {
-    recipes(username: $username) {
+  query review($username: String) {
+    reviews(username: $username) {
       _id
-      recipeText
+      reviewText
       username
     }
   }
 `;
 
 export const QUERY_REVIEW = gql`
-  query recipe($id: ID!) {
-    recipe(_id: $id) {
+  query review($id: ID!) {
+    review(_id: $id) {
       _id
-      recipeText
+      reviewText
       username
     }
   }
@@ -26,9 +26,9 @@ export const QUERY_USER = gql`
       _id
       username
       email
-      recipes {
+      review {
         _id
-        recipeText
+        reviewText
       }
     }
   }
@@ -40,9 +40,9 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      recipes {
+      reviews {
         _id
-        recipeText
+        reviewText
       }
     }
   }

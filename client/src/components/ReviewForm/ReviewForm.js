@@ -50,13 +50,13 @@ const ReviewForm = () => {
     <main className='flex-row justify-center mb-4'>
       <div className='col-12 col-md-9'>
         <div className='card'>
-          <h4 className='card-header'>Add to your reviews</h4>
+          <h4 className='card-header'>Add to your review</h4>
           <div className='card-body'>
       <form
         className="flex-row justify-center justify-space-between-md align-stretch"
         onSubmit={handleFormSubmit}>
         <textarea
-          placeholder="Review Text"
+          placeholder="Review this shoe..."
           value={reviewText}
           className="form-input-review w-100"
           onChange={handleChange}
