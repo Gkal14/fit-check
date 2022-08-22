@@ -6,30 +6,32 @@ const Home = () => {
   return (
     <main>
 
-      <div class="d-flex justify-content-center mt-5">
-        <div class="row align-items-center justify-content-center">
-          <div class="col">
-            <h1 class='mx-auto '>
+      <div >
+        
+            <h1>
               Hi there!
             </h1>
             <div>
-              Welcome to Fit Check,
+            <br></br>
+        <br></br>
+              <h4>Welcome to Fit Check,<br></br>A site for climbers to share their opinion on climbing shoes.</h4>
             </div>
-          </div>
-          <div class='col'>
-            <p>
-              A site for climbers to share their opinion on climbing shoes.
-            </p>
-          </div>
-        </div>
-
+            <div>
+              <p> Login or Signup and navigate to the homescreen to begin reviewing</p>
+            </div>
+            
       </div>
+      
 
-      <div class="row align-items-center justify-content-center">
-        <img src='https://images.freeimages.com/images/previews/8fd/rock-climbing-2-1405901.jpg'
-        alt="rock climber" class="picSize" >
+  
+
+      <div class="Pic">
+        <img src='https://media.npr.org/assets/img/2020/11/10/gettyimages-1126805923-c445557200d95ced2787d91b212c65e8abcdef4d.jpg'
+        alt="rock climber" class="pic" >
         </img>
       </div>
+
+    
 
 
 

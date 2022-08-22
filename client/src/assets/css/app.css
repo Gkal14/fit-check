@@ -1,22 +1,11 @@
-.picSize{
-    width: 1025px;
+.pic{
+    width: 100% !important;
     height: 650px;
-}
-
-.my-pic {
-	clip-path: circle();
-    width: 100px;
-    height: 100px;
-
+    padding-bottom: 25px;
 }
 
 .textcenter{
     margin: auto;
     width: 50%;
-    border: 3px solid green;
     padding: 10px;
-
-
-
-
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
+import './app.css'
 
 import Auth from '../../utils/auth';
 
@@ -10,11 +11,12 @@ const Header = () => {
     Auth.logout();
   };
   return (
+    <div class="Navbar">
     <Nav>
       {Auth.loggedIn() ? (
         <>
       <Nav.Item>
-        <Nav.Link as={Link} to="/">
+        <Nav.Link as={Link} to="/home">
           Home
         </Nav.Link>
       </Nav.Item>
@@ -44,6 +46,7 @@ const Header = () => {
         </>
       )}
     </Nav>
+    </div>
   );
 };
 

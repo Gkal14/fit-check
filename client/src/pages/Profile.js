@@ -20,15 +20,18 @@ const Profile = () => {
 
     return (
         <>
-            <p>Profile Page</p>
-            Id: {profileData._id}
+        <div>
+            <br></br>
+            <br></br>
+            <h4>Hi {profileData.username}!</h4>
+            <h5>View your reviewed shoes below</h5>
+
+             {/* Id: {profileData._id}
             <br/>
             Email: {profileData.email}
-            <br/>
-            Username: {profileData.username}
-            <div>
-                {/* <ReviewList/> */}
-            </div>
+            <br/> */}
+            
+    </div>
         </>
     );
 };
