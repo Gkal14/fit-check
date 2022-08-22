@@ -7,6 +7,8 @@ a profile by signing up and then go on to view other user reviews and create rev
 When the user loads the application they will see a landing page asking them to either login or signup<br>
 Once signed in, the user will see that the navigation bar changes to provide them with new options as seen below.<br>
 
+Find the deployed app at: https://fit-check1.herokuapp.com/
+
 ![application image](./images/landing.png)
 
 ![application image](./images/landing-loggedIn.png)
@@ -15,6 +17,19 @@ When the user makes their way through the navigation bar they will find their pr
 ![application image](./images/Review.png)
 
 ![application image](./images/profile.png)
+
+<h2>Technologies Used:</h2>
+
+<p>
+-HTML
+-CSS
+-JavaScript
+-Node.js
+-Express.js
+-MongoDB
+-Bootstrap
+-React
+<p>
 
 <h2>
 Challanges
