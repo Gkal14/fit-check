@@ -11,6 +11,8 @@ const Header = () => {
   };
   return (
     <Nav>
+      {Auth.loggedIn() ? (
+        <>
       <Nav.Item>
         <Nav.Link as={Link} to="/">
           Home
@@ -18,11 +20,9 @@ const Header = () => {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link as={Link} to="/profile">
-          Profile
+          Your reviews
         </Nav.Link>
       </Nav.Item>
-      {Auth.loggedIn() ? (
-        <>
           <Nav.Item>
             <Nav.Link onClick={logout}>
               Logout
